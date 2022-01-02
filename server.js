@@ -55,8 +55,6 @@ var server = http.createServer(function (request, response) {
             box-sizing: border-box;
         }
 
-
-
         #heart {
             display: inline-block;
             /* border: 1px solid blue; */
@@ -115,7 +113,15 @@ var server = http.createServer(function (request, response) {
             transform: rotate(45deg);
             background: red;
             /* position: absolute; */
-        }`)
+        }
+        
+        h1{
+            color:red
+        }
+        h2{
+            color:pink
+        }
+        `)
         response.end()
     }
     else if (path === '/y') {
@@ -127,7 +133,7 @@ var server = http.createServer(function (request, response) {
     else {
         response.statusCode = 404
         response.setHeader('Content-Type', 'text/html;charset=utf-8')
-        response.write(`你输入的路径不存在对应的内容`)
+        response.write(`你访问的页面不存在!!!`)
         response.end()
     }
 
