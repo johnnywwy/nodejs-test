@@ -46,7 +46,7 @@ var server = http.createServer(function (request, response) {
         `)
         response.end()
     }
-    else if (path === '/x') {
+    else if (path === '/style.css') {
         response.statusCode = 200
         response.setHeader('Content-Type', 'text/css;charset=utf-8')
         response.write(`* {
@@ -124,12 +124,12 @@ var server = http.createServer(function (request, response) {
         `)
         response.end()
     }
-    else if (path === '/y') {
-        response.statusCode = 200
-        response.setHeader('Content-Type', 'text/javascript;charset=utf-8')
-        response.write(`console.log('我是js啦')`)
-        response.end()
-    }
+    // else if (path === '/y') {
+    //     response.statusCode = 200
+    //     response.setHeader('Content-Type', 'text/javascript;charset=utf-8')
+    //     response.write(`console.log('我是js啦')`)
+    //     response.end()
+    // }
     else {
         response.statusCode = 404
         response.setHeader('Content-Type', 'text/html;charset=utf-8')
