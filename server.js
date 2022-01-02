@@ -32,10 +32,9 @@ var server = http.createServer(function (request, response) {
         response.write(`
         <!DOCTYPE html>
         <head>
-            <link rel="stylesheet" href="/x">
+            <link rel="stylesheet" href="/style.css">
         </head>
         <body></body>
-        <script src="/y"></script>
         <h1>哈哈哈哈哈，我是二哈</h1>
         <h2>我是新增的内容</h2>
         <div id="heart">
